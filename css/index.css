@@ -1,0 +1,114 @@
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 50px;
+    vertical-align: middle;
+  }
+  
+  .image {
+    flex-basis: 45%;
+    margin-right: 5%;
+  }
+  
+  .image img {
+    max-width: 100%;
+  }
+  
+  .text {
+    flex-basis: 50%;
+  }
+  
+  .text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20em;
+  }
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightgreen;
+  }
+  
+  .even-spacing {
+    margin-top: 10px; /* add 20 pixels of margin to the top */
+    margin-bottom: 20px; /* add 20 pixels of margin to the bottom */
+  }
+  
+  .container-fluid{
+    padding-top: 50px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to the height of the viewport */
+  }
+  
+  .view-button {
+    background-color: #0077cc; /* Set the background color of the button */
+    color: white; /* Set the text color of the button */
+    font-size: 1.2em; /* Set the font size of the button text */
+    border: none; /* Remove the button border */
+    padding: 1em 2em; /* Set the padding of the button */
+    border-radius: 5px; /* Add some rounding to the button corners */
+    cursor: pointer; /* Change the mouse cursor to a hand when hovering over the button */
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide {
+    width: 50%;
+    flex-shrink: 0;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
